@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "Modern Era Medium";
+  src: url("../assets/fonts/Modern-Era-Medium.ttf");
+}
+
+:root {
+  --color-black: #1a1a1a;
+  --color-white: #ffffff;
+  --light-grey: #f5f6f9;
+  --color-blue: #888caf;
+  --dark-grey: #d9d9d9;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: var(--color-blue);
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Modern Era Medium", sans-serif;
+  box-sizing: border-box;
+
+  background-color: var(--color-black);
+  color: var(--color-white);
+  position: relative;
+
+  display: grid;
+  min-height: 100vh;
+  width: 100%;
+  grid-template-areas:
+    "header header header"
+    "aside main main";
+  grid-template-rows: 4.5em auto;
+  grid-template-columns: 15em auto;
+}
+
+h1 {
+  font-size: 1.875rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 17em;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  grid-area: header;
+}
+
+aside {
+  background: var(--color-blue);
+  grid-area: aside;
+  padding: 2.5em;
+}
+
+aside > div {
+  top: 1.5rem;
+  position: sticky;
+}
+
+main {
+  grid-area: main;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2em;
+
+  height: 50em;
+}
+
+.circle {
+  height: 46px;
+  width: 46px;
+  background-color: var(--color-white);
+  color: var(--color-black);
+
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-received {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+#message-container {
+  margin-top: 2.75em;
+  margin-bottom: 2.75em;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 2.5em;
+}
+
+li {
+  display: flex;
+  line-height: 1.5;
+}
+
+.message {
+  margin-left: 0.75em;
+}
+
+form {
+  display: flex;
+  gap: 1em;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-blue);
+  height: 3.5625em;
+  min-width: 3.5625em;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+#message-input {
+  font-family: "Modern Era Medium";
+  font-size: 1rem;
+  padding-left: 2.5em;
+  border: none;
+  border-radius: 0.5em;
+  width: 100%;
+}
+
+.welcome-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#feedback {
+  margin-bottom: 1em;
+}
+
+#loading-messages {
+  color: var(--color-blue);
+  display: flex;
+}
+
+.loading-message {
+  margin-bottom: 2.75em;
+}
+
+.circle-loading {
+  height: 46px;
+  width: 46px;
+  background-color: var(--color-blue);
+  color: var(--color-black);
+
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-margin {
+  margin-top: 0.5em;
+}
+
+.loading-image {
+  display: inline-flex;
+  vertical-align: top;
+}

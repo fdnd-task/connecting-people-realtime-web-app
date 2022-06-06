@@ -1,0 +1,26 @@
+<%- include('partials/header.ejs') %>
+
+<aside>
+  <div>
+    <img src="/assets/images/scrollbook-logo.svg" alt="Scrollbook Logo" />
+  </div>
+</aside>
+<main>
+  <ul id="message-container"></ul>
+  <div id="loading-messages"></div>
+  <div id="feedback"></div>
+  <form id="send-container">
+    <button>
+      <img src="assets/icons/smiley.svg" alt="">
+    </button>
+    <button>
+      <img src="assets/icons/picture.svg" alt="">
+    </button>
+    <input type="text" placeholder="Type a message..." id="message-input">
+    <button type="submit">
+      <img src="assets/icons/send.svg" alt="">
+    </button>
+  </form>
+</main>
+
+<%- include('partials/footer.ejs') %>
