@@ -1,0 +1,34 @@
+{
+  "name": "sprint-11-realtime-web-qpp",
+  "version": "1.0.0",
+  "description": "Real chatroom ",
+  "main": "main.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yasser-Slaymen/SPRINT-11-Realtime-Web-Qpp.git"
+  },
+  "author": "Yasser & Matijs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yasser-Slaymen/SPRINT-11-Realtime-Web-Qpp/issues"
+  },
+  "homepage": "https://github.com/Yasser-Slaymen/SPRINT-11-Realtime-Web-Qpp#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
+    "cssnano": "^5.1.11",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "path": "^0.12.7",
+    "postcss": "^8.4.14",
+    "socket.io": "^4.5.1"
+  }
+}
