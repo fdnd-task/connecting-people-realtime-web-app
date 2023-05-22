@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4E7141;
+  --secondary: #F26F21;
+  --tertiary: #F6F7F9;
+  --p-color: #6A6A6A;
+  --background-color: #F6F7F9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
+  line-height: 1.4;
+  font-weight: 100;
+  color: var(--p-color);
+}
+
+h1 {
+  font-family: 'Murecho', sans-serif;
+  color: var(--primary);
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+}
+
+h2 {
+  font-family: 'Murecho', sans-serif;
+  color: var(--primary);
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+}
+
+h3 {
+  font-family: 'Murecho', sans-serif;
+  color: var(--primary);
+  font-size: 1.9rem;
+  line-height: 1.9rem;
+}
+
+h4 {
+  font-family: 'Murecho', sans-serif;
+  color: var(--primary);
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+   /* ------------------ WELKOM PAGINA (JOELLE) ---------------  */
+
+/* INTRO WELKOM PAGE */
+.intro-welcome-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-welcome-page p{
+  text-align: center;
+  width: 300px;
+}
+
+/* FORMULIER NAAM */
+.flex-container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container-form input{
+  border-radius: 25px;
+  border: solid 2px var(--primary);
+  width: 180px;
+}
+
+.form-welcome-page h2 {
+  font-size: 1.5rem;
+}
+
+/* BUTTON WELCOME PAGE */
+.button-welcome-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-welcome-page button {
+  margin-top: 2rem;
+  background-color: var(--secondary);
+  color: white;
+  font-family: 'Murecho', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border: solid 2px #F26F21;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+   /* --------------- LOADING STATE PAGINA (JOELLE) -----------  */
+.header-loading-page h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#countdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.sticker-growing-plant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sticker-growing-plant iframe {
+  width: 250px;
+}
+
+
+   /* ----------------- IDEAL STATE PAGINA (ROSA) -------------  */
+
+.quiz-container{
+  padding: 3rem;
+}
+
+.quiz-header ul {
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-header ul li {
+  list-style-type: none;
+  margin-top: 1rem;
+  max-width: 20rem;
+  background-color: var(--background-color);
+  color: var(--primary);
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border-radius: 25px;
+  border: 2px solid var(--primary);
+}
+
+.quiz-header ul li:hover{
+  background-color: var(--primary);
+  color: white;
+  transition: 0.4s;
+}
+
+.quiz-container button{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: var(--secondary);
+  color: white;
+  font-family: 'Murecho', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border: solid 2px #F26F21;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.quiz-container button:hover{
+  background-color: white;
+  color: var(--secondary);
+  border: solid 2px #F26F21;
+  transition: 0.3s;
+}
+
+   /* ---------------- PARTIAL STATE PAGINA (DEMI) ------------  */
+
+   /* ----------- IDEAL STATE CHATROOM PAGINA (ROSA) ----------  */
+
+   /* ------------------ ERROR PAGINA (DEMI) ------------------  */
+
+.error-message{
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: .5rem;
+}
+
+.error-message > h2{
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.error-message > img{
+  width: 10rem;
+  height: 10rem;
+  margin: 8rem 0 8rem 8rem;
+}
+
+.error-message button{
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary);
+  color: white;
+  font-family: 'Murecho', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border: solid 2px #F26F21;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.error-message button:hover{
+  background-color: white;
+  color: var(--secondary);
+  border: solid 2px #F26F21;
+  transition: 0.3s;
+}

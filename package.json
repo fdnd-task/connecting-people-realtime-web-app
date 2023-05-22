@@ -1,0 +1,30 @@
+{
+    "name": "plantswap",
+    "version": "1.0.0",
+    "description": "It's a trivia for the users of PlantSwap",
+    "type": "module",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ju5tu5/barebonechat.git"
+    },
+    "keywords": [
+        "express",
+        "socket.io"
+    ],
+    "author": "Joelle, Rosa en Demi",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/ju5tu5/barebonechat/issues"
+    },
+    "homepage": "https://github.com/ju5tu5/barebonechat#readme",
+    "dependencies": {
+        "ejs": "^3.1.9",
+        "express": "^4.17.1",
+        "socket.io": "^4.0.0"
+    }
+}
